@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canteen Pre-Order | Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">🍴 Canteen PreOrder</div>
+    <ul class="nav-links">
+        <li><a href="signin.html" class="nav-link">Sign In</a></li>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="cart.html" class="nav-link">Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        <li><a href="checkout.html" class="nav-link">Checkout</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        
+   </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content animate">
+    <h1>Pre-Order Your Meals, Skip the Queue!</h1>
+    <p>Save time, eat fresh, and enjoy your food hassle-free 🍲</p>
+    <a href="menu.html" class="btn">Order Now</a>
+  </div>
+</section>
+
+
+
+<!-- Features Section -->
+<section class="features">
+  <h2>Why Pre-Order?</h2>
+  <div class="feature-grid">
+    <div class="feature-card">⏱️<h3>Save Time</h3><p>No more standing in long queues during peak hours.</p></div>
+    <div class="feature-card">🍱<h3>Fresh & Hot</h3><p>Your food is prepared and packed just in time for pickup.</p></div>
+    <div class="feature-card">💳<h3>Easy Payment</h3><p>Pay online or at the counter—whichever suits you best.</p></div>
+    <div class="feature-card">📅<h3>Plan Ahead</h3><p>Reserve your meals for specific days and times in advance.</p></div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2>What Students Say</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>“Pre-ordering has saved me so much time! I can grab my lunch quickly and enjoy more free time.”</p>
+      <h4>- Rahul, CSE 3rd Year</h4>
+    </div>
+    <div class="testimonial">
+      <p>“The food quality is great, and I love that I don’t have to worry about missing out on my favorite items.”</p>
+      <h4>- Priya, ECE 2nd Year</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- 1️⃣ Company Info -->
+    <div class="footer-section">
+      <h3>🍴 Canteen PreOrder</h3>
+      <p>Skip the queue and enjoy fresh, hot meals with our hassle-free pre-order system.  
+      Fast • Fresh • Convenient.</p>
+    </div>
+
+    <!-- 2️⃣ Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- 3️⃣ Contact Info -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>📍 College Canteen Block, Campus Road, Melvisharam, Ranipet</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ support@canteenpreorder.com</p>
+    </div>
+
+    <!-- 4️⃣ Social Media -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <!-- 5️⃣ Newsletter -->
+    <div class="footer-section newsletter">
+      <h4>Stay Updated</h4>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom Strip -->
+  <div class="footer-bottom">
+    <p>© 2025 Canteen PreOrder. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("newsletterForm")?.addEventListener("submit", function(e){
+    e.preventDefault();
+    showToast("✅ Thanks for subscribing!");
+    this.reset();
+});
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>

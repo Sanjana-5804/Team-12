@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up | Canteen PreOrder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Sign Up</h2>
+    <form id="signupForm">
+      <label>Full Name:</label>
+      <input type="text" id="signupName" placeholder="Enter your name" required>
+
+      <label>Email:</label>
+      <input type="email" id="signupEmail" placeholder="Enter your email" required>
+
+      <label>Password:</label>
+      <input type="password" id="signupPassword" placeholder="Enter password" required>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="signupConfirm" placeholder="Confirm password" required>
+
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+  </div>
+</div>
+
+<script>
+document.getElementById("signupForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = document.getElementById("signupName").value;
+    showToast(`Account created successfully, ${name}!`);
+    setTimeout(()=>{ window.location.href="signin.html"; }, 1500);
+});
+</script>
+<div id="toast"></div>
+</body>
+</html>
