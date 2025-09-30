@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Canteen PreOrder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">🍴 Canteen PreOrder</div>
+    <ul class="nav-links">
+      <li><a href="signin.html" class="nav-link">Sign In</a></li>
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="menu.html" class="nav-link">Menu</a></li>
+      <li><a href="about.html" class="nav-link active">About Us</a></li>
+      <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="height:50vh;">
+  <div class="hero-content animate">
+    <h1>About CAHCET Dine </h1>
+    <p>Serving fresh meals quickly and efficiently with our pre-order system 🍲</p>
+  </div>
+</section>
+
+<!-- About Content -->
+<section class="about" style="padding:50px 20px; max-width:900px; margin:auto;">
+  <h2>Who We Are</h2>
+  <p>We are a student-focused initiative designed to streamline the college canteen experience. Our goal is to help students and staff enjoy fresh, tasty meals without long waiting times. By leveraging technology, we make it easy to pre-order, pay, and pick up your meals efficiently.</p>
+
+  <h2>Our Mission</h2>
+  <p>To improve dining convenience and reduce food queues while maintaining quality and affordability.</p>
+
+  <h2>Our Values</h2>
+  <ul>
+    <li>Fresh and quality food</li>
+    <li>Efficiency and time-saving</li>
+    <li>Transparency in ordering and payment</li>
+    <li>Customer satisfaction</li>
+  </ul>
+</section>
+
+<!-- Footer -->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- 1️⃣ Company Info -->
+    <div class="footer-section">
+      <h3>🍴 Canteen PreOrder</h3>
+      <p>Skip the queue and enjoy fresh, hot meals with our hassle-free pre-order system.  
+      Fast • Fresh • Convenient.</p>
+    </div>
+
+    <!-- 2️⃣ Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+      </ul>
+    </div>
+
+    <!-- 3️⃣ Contact Info -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>📍 College Canteen Block, Campus Road, Melvisharam, Ranipet</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ support@canteenpreorder.com</p>
+    </div>
+
+    <!-- 4️⃣ Social Media -->
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+      </div>
+    </div>
+
+    <!-- 5️⃣ Newsletter -->
+    <div class="footer-section newsletter">
+      <h4>Stay Updated</h4>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom Strip -->
+  <div class="footer-bottom">
+    <p>© 2025 Canteen PreOrder. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("newsletterForm")?.addEventListener("submit", function(e){
+    e.preventDefault();
+    showToast("✅ Thanks for subscribing!");
+    this.reset();
+});
+</script>
+</body>
+</html>
